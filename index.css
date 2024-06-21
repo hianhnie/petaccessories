@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: font_strong;
+}
+@font-face {
+    font-family:font_strong;
+    src:url('/font/Inter-Medium.ttf') format('truetype'),
+    url('/font/Inter-Regular.ttf') format('embedded-opentype'),
+    url('/font/Inter-Thin.ttf') format('woff');
+    font-weight:normal;
+    font-style:normal;
+   }
+   /* css for pc */
+   header{
+    width: 100%;
+    height: auto;
+   }
+   .header-top{
+    display: block;
+    width: 100%;
+    background-color: #ee9cce;
+    text-align: center;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+   }
+   .header-bot{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    height: 150px;
+    line-height: 150px;
+    font-weight: 100;
+    /* background-color: aquamarine; */
+   }
+   .header-left{
+    display: flex;
+    text-align: center;
+    padding-left: 5%;
+    position: absolute;
+    z-index: 100;
+   }
+   .header-left ul{
+    display: flex;
+    list-style-type: none;
+   }
+   .header-left ul a,.header-right a{
+    text-decoration: none;
+    color: #000000;
+   }
+   .header-left ul li:hover,.header-right .fa-solid:hover{
+    color: #ee9cce;
+   }
+   .header-left ul li{
+    padding-right: 20px;
+   }
+   .header-center{
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    z-index: 1;
+   }
+   .header-center img{
+    width: 95px;
+    padding-top: 30px;
+   }
+   .header-right{
+    display: flex;
+    padding-right: 5%;
+    position: absolute;
+    right: 0px;
+    z-index: 99;
+   }
+   .header-right .fa-solid{
+    line-height: 100px;
+    padding-right: 20px;
+   }
